@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05621e30-b422-4bf2-95df-7c9d0b32e05f" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/JS/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EksamenFrontend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EksamenFrontend.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -58,6 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1685348259441</updated>
       <workItem from="1685348260441" duration="420000" />
+      <workItem from="1685349349240" duration="1877000" />
+      <workItem from="1685607519480" duration="900000" />
     </task>
     <servers />
   </component>

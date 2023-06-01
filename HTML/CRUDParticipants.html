@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Participants</title>
+  <script src="../JS/fetch.js"></script>
+  <link rel="stylesheet" href="../CSS/CRUDParticipants.css">
+  <script src="../JS/CRUDParticipants.js" defer></script>
+
+</head>
+<body>
+<main class="container">
+  <section>
+    <h1>Participant List</h1>
+
+    <div class="buttons-container">
+      <form id="createForm">
+        <label for="createSailboatId">Sailboat ID:</label>
+        <input type="text" id="createSailboatId" name="name">
+        <br>
+        <label for="createRaceId">Race ID:</label>
+        <input type="text" id="createRaceId" name="type">
+        <br>
+        <label for="createPoints">Points:</label>
+        <input type="number" id="createPoints" name="points">
+        <br>
+        <button class="btn btn-primary" id="submitCreate">Create Participant</button>
+      </form>
+      <form id="updateForm">
+        <label for="updateID">ID:</label>
+        <input type="text" id="updateID" name="ID" class="form-control">
+        <br>
+        <label for="updateSailboatId">Sailboat ID:</label>
+        <input type="text" id="updateSailboatId" name="name">
+        <br>
+        <label for="updateRaceId">Race ID:</label>
+        <input type="text" id="updateRaceId" name="type">
+        <br>
+        <label for="updatePoints">Points:</label>
+        <input type="number" id="updatePoints" name="points">
+        <br>
+        <button class="btn btn-primary" id="submitUpdate">Update Participant</button>
+      </form>
+      <form id="deleteForm">
+        <label for="deleteID">ID:</label>
+        <input type="text" id="deleteID" name="ID" class="form-control">
+        <br>
+        <button class="btn btn-primary" id="submitDelete">Delete Participant</button>
+      </form>
+      <form id="deleteSailboatForm">
+        <label for="sailboatID">ID:</label>
+        <input type="text" id="sailboatID" name="ID" class="form-control">
+        <br>
+        <button class="btn btn-primary" id="submitSailboatDelete">Delete Sailboat</button>
+      </form>
+    </div>
+
+    <table class="table table-hover table-striped" id="tblParticipants">
+      <thead class="table-primary">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Points</th>
+        <th scope="col">Race ID</th>
+        <th scope="col">Race Date</th>
+        <th scope="col">Sailboat ID</th>
+        <th scope="col">Sailboat Name</th>
+      </tr>
+      </thead>
+      <tbody id="tblBodyParticipants">
+      </tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>
