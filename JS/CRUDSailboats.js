@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", runFetchAllSailboats) // Når siden starter, så runner vi vores hovedmetode i vores script vi har kaldt runFetchAllKandidater.
+document.addEventListener("DOMContentLoaded", runFetchAllSailboats)
 
 let tableBodySailboats = document.querySelector("#tblBodySailboats")
 
