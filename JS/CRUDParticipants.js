@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", runFetchAllParticipants) 
+document.addEventListener("DOMContentLoaded", runFetchAllParticipants)
 
 let tableBodyParticipants = document.querySelector("#tblBodyParticipants")
 
