@@ -49,6 +49,7 @@ async function fetchResponse(url, request) {
     }
     return new Error(errorMessage)
 }
+
 // Kan bruges til Get, Post, Put og Delete
 async function fetchAny(fetchUrl, fetchMethod, objectBody) {
     const fullURL = localHostURL + fetchUrl
