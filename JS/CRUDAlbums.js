@@ -16,7 +16,6 @@ function fillRowsInTable(album) {
         <td>${album.artist}</td>
         <td>${album.genre}</td>
         <td>${album.availability}</td>
-        <td>${album.store.storeId}</td>
         `;
 
     tableBodyAlbums.appendChild(tableRow);
@@ -62,10 +61,10 @@ function updateAlbum() {
 
     const form = document.querySelector("#updateForm")
     const albumObjekt = preparePlainFormData(form)
-    albumObjekt.id = albumId
+    albumObjekt.albumId = albumId
 
     console.log("ID HERE" + albumId)
-    console.log("ID HERE" + albumObjekt.id)
+    console.log("ID HERE" + albumObjekt.albumId)
 
     // Nu har vi de informationer vi skal bruge for at PUT vores båd. Vi indtaster url + fetchmetode + objekt vi gerne vil update.
     fetchAny("album", "PUT", albumObjekt).then(album => {
@@ -81,15 +80,14 @@ function updateAlbum() {
 document.querySelector("#deleteForm").addEventListener('submit', deleteAlbum)
 
 function deleteAlbum() {
-
     const albumId = document.querySelector("#deleteID").value
 
     const form = document.querySelector("#deleteForm")
     const albumObjekt = preparePlainFormData(form)
-    albumObjekt.id = albumId
+    albumObjekt.albumId = albumId
 
     console.log("ID HERE" + albumId)
-    console.log("ID HERE" + albumObjekt.id)
+    console.log("ID HERE" + albumObjekt.albumId)
 
     fetchAny(`album/${albumId}`, "DELETE", null).then(album => {
         alert(`Album with ID: ${albumId} has been deleted`);
@@ -108,6 +106,8 @@ function preparePlainFormData(form) {
     console.log("Made the form in to FormData:", formData)
     const plainFormData = Object.fromEntries(formData.entries())
     console.log("Changes and returns the FormData as PlainFormData:", plainFormData)
+
+
     return plainFormData
 }
 
