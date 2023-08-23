@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Albums</title>
-  <link rel="stylesheet" href="../CSS/CRUDAlbums.css">
-  <script src="../JS/CRUDAlbums.js" defer></script>
-  <script src="../JS/fetch.js"></script>
+    <meta charset="UTF-8">
+    <title>Albums</title>
+    <link rel="stylesheet" href="../CSS/CRUDAlbums.css">
+    <script src="../JS/CRUDAlbums.js" defer></script>
+    <script src="../JS/fetch.js"></script>
 
 </head>
 <body>
 <main class="container">
-  <section>
-    <h1>Albums List</h1>
+    <section>
+        <h1>Albums List</h1>
 
-    <div class="buttons-container">
-      <form id="createForm">
-        <label for="title">Title:</label>
-        <input type="text" id="createTitle" name="title">
-        <br>
-        <label for="artist">Artist:</label>
-        <input type="text" id="createArtist" name="artist">
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" id="createGenre" name="genre">
-        <br>
-        <label for="availability">Availability:</label>
-        <input type="text" id="createAvailability" name="availability">
-        <br>
-        <label for="storeId">Store ID:</label>
-        <input type="number" id="createStoreId" name="storeId">
-        <br>
-        <button class="btn btn-primary" id="submitCreate">Create Album</button>
-      </form>
+        <div class="buttons-container">
+            <form id="createForm">
+                <label for="title">Title:</label>
+                <input type="text" id="createTitle" name="title">
+                <br>
+                <label for="artist">Artist:</label>
+                <input type="text" id="createArtist" name="artist">
+                <br>
+                <label for="genre">Genre:</label>
+                <input type="text" id="createGenre" name="genre">
+                <br>
+                <label for="availability">Availability:</label>
+                <input type="text" id="createAvailability" name="availability">
+                <br>
+                <label for="storeId">Store ID:</label>
+                <input type="number" id="createStoreId" name="storeId">
+                <br>
+                <button class="btn btn-primary" id="submitCreate">Create Album</button>
+            </form>
 
-      <form id="updateForm">
-        <label for="ID">ID:</label>
-        <input type="text" id="ID" name="ID" class="form-control">
-        <br>
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title">
-        <br>
-        <label for="artist">Artist:</label>
-        <input type="text" id="artist" name="artist">
-        <br>
-        <label for="genre">Genre:</label>
-        <input type="text" id="genre" name="genre">
-        <br>
-        <label for="availability">Availability:</label>
-        <input type="text" id="availability" name="availability">
-        <br>
-        <label for="storeId">Store ID:</label>
-        <input type="number" id="storeId" name="storeId">
-        <br>
-        <button class="btn btn-primary" id="submitUpdate">Update Album</button>
-      </form>
+            <form id="updateForm">
+                <label for="ID">ID:</label>
+                <input type="text" id="ID" name="ID" class="form-control">
+                <br>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+                <br>
+                <label for="artist">Artist:</label>
+                <input type="text" id="artist" name="artist">
+                <br>
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre">
+                <br>
+                <label for="availability">Availability:</label>
+                <input type="text" id="availability" name="availability">
+                <br>
+                <label for="storeId">Store ID:</label>
+                <input type="number" id="storeId" name="storeId">
+                <br>
+                <button class="btn btn-primary" id="submitUpdate">Update Album</button>
+            </form>
 
-      <form id="deleteForm">
-        <label for="ID">ID:</label>
-        <input type="text" id="deleteID" name="ID" class="form-control">
-        <br>
-        <button class="btn btn-primary" id="submitDelete">Delete Album</button>
-      </form>
-    </div>
+            <form id="deleteForm">
+                <label for="ID">ID:</label>
+                <input type="text" id="deleteID" name="ID" class="form-control">
+                <br>
+                <button class="btn btn-primary" id="submitDelete">Delete Album</button>
+            </form>
+        </div>
 
-    <table class="table table-hover table-striped" id="tblAlbums">
-      <thead class="table-primary">
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Title</th>
-        <th scope="col">Artist</th>
-        <th scope="col">Genre</th>
-        <th scope="col">Availability</th>
-      </tr>
-      </thead>
-      <tbody id="tblBodyAlbums">
-      </tbody>
-    </table>
-  </section>
+        <table class="table table-hover table-striped" id="tblAlbums">
+            <thead class="table-primary">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Availability</th>
+            </tr>
+            </thead>
+            <tbody id="tblBodyAlbums">
+            </tbody>
+        </table>
+    </section>
 </main>
 </body>
 </html>

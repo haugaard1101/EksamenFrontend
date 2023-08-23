@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05621e30-b422-4bf2-95df-7c9d0b32e05f" name="Changes" comment="initial commit" />
+    <list default="true" id="05621e30-b422-4bf2-95df-7c9d0b32e05f" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/CSS/Customer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/Customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/Customer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/CRUDParticipants.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/CRUDSailboats.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/CRUDAlbums.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/CRUDAlbums.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/CRUDParticipants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/CRUDSailboats.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/CRUDParticipants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/CRUDSailboats.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +27,8 @@
       <list>
         <option value="package.json" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -64,6 +76,7 @@
       <workItem from="1685607519480" duration="900000" />
       <workItem from="1685622039615" duration="25600000" />
       <workItem from="1687380278833" duration="68000" />
+      <workItem from="1692777247554" duration="17177000" />
     </task>
     <servers />
   </component>
